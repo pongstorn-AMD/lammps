@@ -40,6 +40,7 @@ class PairLJCharmmCoulLongOMP : public PairLJCharmmCoulLong, public ThrOMP {
  private:
   template <int EVFLAG, int EFLAG, int NEWTON_PAIR>
   void eval(int ifrom, int ito, ThrData *const thr);
+  void eval_PM(int ifrom, int ito, ThrData *const thr);
 };
 
 }    // namespace LAMMPS_NS
